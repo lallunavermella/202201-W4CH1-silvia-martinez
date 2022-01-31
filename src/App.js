@@ -1,24 +1,18 @@
-import logo from './logo.svg';
-import './App.css';
+import "./App.css";
+import Info from "./Info";
+import Button from "./Button";
+import Gentlemen from "./Gentlemen";
 
 function App() {
+  const textTitle = "The pointing gentlemen";
+  const text = "0 gentlemen pointing at you";
+  const infoClass = "info";
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <Info text={textTitle} className={infoClass} textp={text} />
+      <Button class="button button--select" text="Select All" />
+      <Gentlemen />
+    </>
   );
 }
 
