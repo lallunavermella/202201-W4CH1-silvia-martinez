@@ -1,27 +1,31 @@
-const Gentlemen = ({ imagen, name, jobTag, job }) => {
+const Gentlemen = (gentleman) => {
   return (
     <>
-      <li>
+      <li className="gentleman">
         <div class="gentleman__avatar-container">
           <img
             class="gentleman__avatar"
-            src={imagen}
-            alt="The Fary pointing at you"
+            src={`/img/${gentleman.picture}`}
+            alt={`${gentleman.name} pointing at you`}
           />
-          <span class="gentleman__initial">F</span>
+          <span class="gentleman__initial">
+            {gentleman.name[0].toUpperCase()}
+          </span>
         </div>
         <div class="gentleman__data-container">
-          <h2 class="gentleman__name">{name}</h2>
+          <h2 class="gentleman__name">{gentleman.name}</h2>
           <ul class="gentleman__data-list">
             <li class="gentleman__data">
               <span class="gentleman__data-label">Profession:</span>
-              {job}
+              {gentleman.profession}
             </li>
             <li class="gentleman__data">
-              <span class="gentleman__data-label">Status:</span> RIP
+              <span class="gentleman__data-label">Status:</span>{" "}
+              {gentleman.status}
             </li>
             <li class="gentleman__data">
-              <span class="gentleman__data-label">Twitter:</span> Pending
+              <span class="gentleman__data-label">Twitter:</span>{" "}
+              {gentleman.status}
             </li>
           </ul>
         </div>
