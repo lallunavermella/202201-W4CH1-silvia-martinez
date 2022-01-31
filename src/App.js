@@ -1,10 +1,7 @@
 import "./App.css";
-import Info from "./Info";
-import Button from "./Button";
-import Gentlemen from "./Gentlemen";
-import "./Button.css";
-import "./Info.css";
-import "./Gentlemen.css";
+import Info from "./components/Info";
+import Button from "./components/Button";
+import Gentlemen from "./components/Gentlemen";
 
 function App() {
   const text = "0 gentlemen pointing at you";
