@@ -1,7 +1,6 @@
-const Info = ({ textTitle, className, text }) => {
+const Info = ({ className, text }) => {
   return (
     <>
-      <h1>{textTitle}</h1>
       <p class={className}>{text}</p>
     </>
   );
